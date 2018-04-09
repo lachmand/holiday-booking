@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="MediatR" Version="4.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="2.3.0" />
+    <PackageReference Include="Confluent.Kafka" Version="0.11.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\HolidayBooking.Employee\HolidayBooking.Employee.csproj" />
+    <ProjectReference Include="..\HolidayBooking.Vacation\HolidayBooking.Vacation.csproj" />
+    <ProjectReference Include="..\HolidayBooking.Approver\HolidayBooking.Approver.csproj" />
+    <ProjectReference Include="..\HolidayBooking.Employee.Contract\HolidayBooking.Employee.Contract.csproj" />
+    <ProjectReference Include="..\HolidayBooking.Vacation.Contract\HolidayBooking.Vacation.Contract.csproj" />
+    <ProjectReference Include="..\HolidayBooking.Approver.Contract\HolidayBooking.Approver.Contract.csproj" />
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.0\HolidayBooking.Service.xml</DocumentationFile>
+  </PropertyGroup>
+</Project>

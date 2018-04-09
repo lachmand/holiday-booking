@@ -1,0 +1,11 @@
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Vacation.Contract/bin/Debug/netcoreapp2.0/HolidayBooking.Vacation.Contract.deps.json
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Vacation.Contract/bin/Debug/netcoreapp2.0/HolidayBooking.Vacation.Contract.dll
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Vacation.Contract/bin/Debug/netcoreapp2.0/HolidayBooking.Vacation.Contract.pdb
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Vacation.Contract/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Vacation.Contract/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Vacation.Contract/obj/Debug/netcoreapp2.0/HolidayBooking.Vacation.Contract.csprojResolveAssemblyReference.cache
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Vacation.Contract/obj/Debug/netcoreapp2.0/HolidayBooking.Vacation.Contract.csproj.CoreCompileInputs.cache
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Vacation.Contract/obj/Debug/netcoreapp2.0/HolidayBooking.Vacation.Contract.AssemblyInfoInputs.cache
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Vacation.Contract/obj/Debug/netcoreapp2.0/HolidayBooking.Vacation.Contract.AssemblyInfo.cs
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Vacation.Contract/obj/Debug/netcoreapp2.0/HolidayBooking.Vacation.Contract.dll
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Vacation.Contract/obj/Debug/netcoreapp2.0/HolidayBooking.Vacation.Contract.pdb

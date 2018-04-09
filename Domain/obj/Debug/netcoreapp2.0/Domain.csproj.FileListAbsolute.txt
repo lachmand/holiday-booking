@@ -1,0 +1,16 @@
+/Users/ldhall/Downloads/EventSourcing.NetCore-master/Domain/bin/Debug/netcoreapp2.0/Domain.deps.json
+/Users/ldhall/Downloads/EventSourcing.NetCore-master/Domain/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/ldhall/Downloads/EventSourcing.NetCore-master/Domain/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/ldhall/Downloads/EventSourcing.NetCore-master/Domain/obj/Debug/netcoreapp2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/ldhall/Downloads/EventSourcing.NetCore-master/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfoInputs.cache
+/Users/ldhall/Downloads/EventSourcing.NetCore-master/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
+/Users/ldhall/Downloads/EventSourcing.NetCore-master/Domain/obj/Debug/netcoreapp2.0/Domain.dll
+/Users/ldhall/Downloads/EventSourcing.NetCore-master/Domain/obj/Debug/netcoreapp2.0/Domain.pdb
+/Users/ldhall/Development/holiday-booking/Domain/bin/Debug/netcoreapp2.0/Domain.deps.json
+/Users/ldhall/Development/holiday-booking/Domain/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/ldhall/Development/holiday-booking/Domain/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/ldhall/Development/holiday-booking/Domain/obj/Debug/netcoreapp2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/ldhall/Development/holiday-booking/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfoInputs.cache
+/Users/ldhall/Development/holiday-booking/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
+/Users/ldhall/Development/holiday-booking/Domain/obj/Debug/netcoreapp2.0/Domain.dll
+/Users/ldhall/Development/holiday-booking/Domain/obj/Debug/netcoreapp2.0/Domain.pdb

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>HolidayBooking.Approver</AssemblyName>
+    <PackageId>HolidayBooking.Approver</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DotNetCore" Version="*" />
+    <PackageReference Include="Confluent.Kafka" Version="0.11.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\HolidayBooking.Approver.Contract\HolidayBooking.Approver.Contract.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\" />
+    <Folder Include="Domain\Approver\" />
+    <Folder Include="Domain\Approver\Handler\" />
+    <Folder Include="View\" />
+  </ItemGroup>
+</Project>

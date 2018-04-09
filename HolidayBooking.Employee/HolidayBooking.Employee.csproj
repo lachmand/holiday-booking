@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>HolidayBooking.Employee</AssemblyName>
+    <PackageId>HolidayBooking.Employee</PackageId>  
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\HolidayBooking.Employee.Contract\HolidayBooking.Employee.Contract.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DotNetCore" Version="*" />
+    <PackageReference Include="MediatR" Version="4.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.2" />
+    <PackageReference Include="Confluent.Kafka" Version="0.11.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.1" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>HolidayBooking.Approver.Contract</AssemblyName>
+    <PackageId>HolidayBooking.Approver.Contract</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DotNetCore" Version="*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Holidaybooking.Vacation.Contract\Holidaybooking.Vacation.Contract.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Approver\Commands\" />
+    <Folder Include="Approver\Events\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Approver\Commands\ApproverApprove.cs" />
+    <Compile Remove="Approver\Events\ApproverApproved.cs" />
+  </ItemGroup>
+</Project>

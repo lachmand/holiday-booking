@@ -1,0 +1,10 @@
+/Users/ldhall/Development/holiday-booking/holiday-booking.manager/obj/Debug/netcoreapp2.0/holiday-booking.manager.csproj.CoreCompileInputs.cache
+/Users/ldhall/Development/holiday-booking/holiday-booking.manager/obj/Debug/netcoreapp2.0/holiday-booking.manager.AssemblyInfoInputs.cache
+/Users/ldhall/Development/holiday-booking/holiday-booking.manager/obj/Debug/netcoreapp2.0/holiday-booking.manager.AssemblyInfo.cs
+/Users/ldhall/Development/holiday-booking/holiday-booking.manager/bin/Debug/netcoreapp2.0/HolidayBooking.Manager.deps.json
+/Users/ldhall/Development/holiday-booking/holiday-booking.manager/bin/Debug/netcoreapp2.0/HolidayBooking.Manager.dll
+/Users/ldhall/Development/holiday-booking/holiday-booking.manager/bin/Debug/netcoreapp2.0/HolidayBooking.Manager.pdb
+/Users/ldhall/Development/holiday-booking/holiday-booking.manager/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/ldhall/Development/holiday-booking/holiday-booking.manager/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/ldhall/Development/holiday-booking/holiday-booking.manager/obj/Debug/netcoreapp2.0/HolidayBooking.Manager.dll
+/Users/ldhall/Development/holiday-booking/holiday-booking.manager/obj/Debug/netcoreapp2.0/HolidayBooking.Manager.pdb

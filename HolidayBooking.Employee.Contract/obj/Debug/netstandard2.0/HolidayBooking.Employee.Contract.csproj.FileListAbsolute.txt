@@ -1,0 +1,3 @@
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Employee.Contract/obj/Debug/netstandard2.0/HolidayBooking.Employee.Contract.csproj.CoreCompileInputs.cache
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Employee.Contract/obj/Debug/netstandard2.0/HolidayBooking.Employee.Contract.AssemblyInfoInputs.cache
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Employee.Contract/obj/Debug/netstandard2.0/HolidayBooking.Employee.Contract.AssemblyInfo.cs

@@ -1,0 +1,14 @@
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/bin/Debug/netcoreapp2.0/holiday-booking-service.deps.json
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/bin/Debug/netcoreapp2.0/holiday-booking-service.runtimeconfig.json
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/bin/Debug/netcoreapp2.0/holiday-booking-service.runtimeconfig.dev.json
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/bin/Debug/netcoreapp2.0/holiday-booking-service.dll
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/bin/Debug/netcoreapp2.0/holiday-booking-service.pdb
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/obj/Debug/netcoreapp2.0/holiday-booking-service.csproj.CoreCompileInputs.cache
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/obj/Debug/netcoreapp2.0/holiday-booking-service.AssemblyInfoInputs.cache
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/obj/Debug/netcoreapp2.0/holiday-booking-service.AssemblyInfo.cs
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/obj/Debug/netcoreapp2.0/holiday-booking-service.dll
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/obj/Debug/netcoreapp2.0/holiday-booking-service.pdb
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/bin/Debug/netcoreapp2.0/HolidayBooking.Employee.dll
+/Users/ldhall/Development/holiday-booking/holiday-booking-service/bin/Debug/netcoreapp2.0/HolidayBooking.Employee.pdb
