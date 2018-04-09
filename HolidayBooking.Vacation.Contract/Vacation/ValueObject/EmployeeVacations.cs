@@ -5,6 +5,6 @@ namespace HolidayBooking.Vacation.Contract.Vacation.ValueObject
     public class EmployeeVacations
     {
         public Guid EmployeeId { get; set; }
-        public IEnumerable<VacationDto> Vacations { get; }
+        public IEnumerable<VacationInfo> Vacations { get; }
     }
 }

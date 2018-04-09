@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using HolidayBooking.Employee.Contract.Employee.Commands;
+using HolidayBooking.Employee.Contract.Employee.Queries;
+using Domain.Commands;
+using Domain.Queries;
 
 namespace HolidayBooking.Service.Controllers
 {
+    [Route("v1/[controller]/{id}")]
     public class EmployeeController:Controller
     {
         private readonly ICommandBus _commandBus;
@@ -16,18 +21,11 @@ namespace HolidayBooking.Service.Controllers
             _commandBus = commandBus;
             _queryBus = queryBus;
         }
-        
-        [HttpGet]
-        public IEnumerable<EmployeeItem> Get()
-        {
-            return new List(){New EmployeeItem(), New EmployeeItem()}; 
-        }
 
-        // GET api/values/5
         [HttpGet("{id}")]
-        public EmployeeItem Get(int id)
+        public Task<EmployeeItem> Get(Guid id)
         {
-            return new EmployeeItem();
+            return _queryBus.Send<GetEmployee, EmployeeItem>(new GetEmployee(id));
         }
     }
 }

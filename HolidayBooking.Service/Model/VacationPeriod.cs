@@ -1,3 +1,4 @@
+using System;
 namespace HolidayBooking.Service.Model
 {
     public class VacationPeriod
@@ -5,7 +6,7 @@ namespace HolidayBooking.Service.Model
         public DateTime Start { get; }
         public DateTime End { get; }
 
-        protected VacationPeriod()
+        protected VacationPeriod(){}
 
         public VacationPeriod(DateTime start, DateTime end)
         {

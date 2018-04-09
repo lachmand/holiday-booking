@@ -23,6 +23,11 @@
     <ProjectReference Include="..\HolidayBooking.Vacation.Contract\HolidayBooking.Vacation.Contract.csproj" />
     <ProjectReference Include="..\HolidayBooking.Approver.Contract\HolidayBooking.Approver.Contract.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Model\VacationPeriod.cs" />
+    <Compile Remove="Model\VacationRequestDto.cs" />
+    <Compile Remove="Model\VacationsDto.cs" />
+  </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netcoreapp2.0\HolidayBooking.Service.xml</DocumentationFile>
   </PropertyGroup>

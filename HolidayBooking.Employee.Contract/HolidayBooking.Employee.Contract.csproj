@@ -6,7 +6,7 @@
     <PackageId>HolidayBooking.Employee.Contract</PackageId>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DotNetCore" Version="*"/>
+    <PackageReference Include="DotNetCore" Version="*" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

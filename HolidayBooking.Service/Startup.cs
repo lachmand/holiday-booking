@@ -14,6 +14,12 @@ using Domain.Commands;
 using Domain.Events;
 using Domain.Queries;
 using Domain.Aggregates;
+using HolidayBooking.Vacation.Contract.Vacation.Command;
+using HolidayBooking.Vacation.Contract.Vacation.Query;
+using HolidayBooking.Vacation.Contract.Vacation.ValueObject;
+using HolidayBooking.Vacation.Contract.Vacation.Event;
+using Holidaybooking.Vacation.Domain.Vacation.Handlers;
+
 
 
 namespace holiday_booking_service
@@ -78,20 +84,10 @@ namespace holiday_booking_service
             services.AddScoped<IQueryBus, QueryBus>();
             services.AddScoped<IEventBus, EventBus>();
 
-            services.AddScoped<IRequestHandler<CreateNewAccount>, CreateNewAccountHandler>();
-            services.AddScoped<IRequestHandler<MakeTransfer>, ProcessInflowHandler>();
-            services.AddScoped<IRequestHandler<GetAccounts, IEnumerable<AccountSummary>>, GetAccountsHandler>();
-            services.AddScoped<IRequestHandler<GetAccount, AccountSummary>, GetAccountHandler>();
+            services.AddScoped<IRequestHandler<CreateVacation>, VacationCommandHandler>();
 
-            services.AddScoped<INotificationHandler<ClientCreated>, ClientsEventHandler>();
-            services.AddScoped<INotificationHandler<ClientUpdated>, ClientsEventHandler>();
-            services.AddScoped<INotificationHandler<ClientDeleted>, ClientsEventHandler>();
-
-            services.AddScoped<IRequestHandler<CreateClient>, ClientsCommandHandler>();
-            services.AddScoped<IRequestHandler<UpdateClient>, ClientsCommandHandler>();
-            services.AddScoped<IRequestHandler<DeleteClient>, ClientsCommandHandler>();
-            services.AddScoped<IRequestHandler<GetClients, List<ClientListItem>>, ClientsQueryHandler>();
-            services.AddScoped<IRequestHandler<GetClient, ClientItem>, ClientsQueryHandler>();
+            services.AddScoped<INotificationHandler<VacationCreated>, VacationEventHandler>();
+ 
          }
     }//class
 }//ns

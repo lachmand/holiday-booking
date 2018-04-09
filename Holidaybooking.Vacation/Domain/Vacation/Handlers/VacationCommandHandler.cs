@@ -5,12 +5,13 @@ using Domain.Commands;
 using Domain.Events;
 using Microsoft.EntityFrameworkCore;
 using HolidayBooking.Vacation.Contract.Vacation.Command;
+using HolidayBooking.Vacation.Contract.Vacation.Event;
 using HolidayBooking.Vacation.Storage;
 
 namespace Holidaybooking.Vacation.Domain.Vacation.Handlers
 {
     public class VacationCommandHandler:
-    ICommandHandler<HolidayBooking.Vacation.Contract.Vacation.Command.ApproveVacation> //ApproveVacation>,
+    ICommandHandler<CreateVacation>
     {
         private readonly HolidayBooking.Vacation.Storage.VacationDbContext dbContext;
         private readonly IEventBus eventBus;
@@ -24,8 +25,22 @@ namespace Holidaybooking.Vacation.Domain.Vacation.Handlers
             this.eventBus = eventBus;
         }
 
-        public async Task Handle(ApproveVacation command, CancellationToken cancellationToken = default(CancellationToken))
+
+        public async Task Handle(CreateVacation command, CancellationToken cancellationToken = default(CancellationToken))
         {
+            var id = command.Id ?? Guid.NewGuid();
+
+            await Vacations.AddAsync(new Vacation(
+                id,
+                command.Data.EmployeeId,
+                new VacationPeriod(command.Data.Start, command.Data.End),
+                Vacation.MapStatus (command.Data.Status),
+                command.Data.ApprovedBy
+            ));
+
+            await dbContext.SaveChangesAsync(cancellationToken);
+
+            await eventBus.Publish(new VacationCreated(id, command.Data));
         }
-    }
-}
+    }//class
+}//ns

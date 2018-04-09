@@ -1,8 +1,10 @@
+using Domain.Aggregates;
+using HolidayBooking.Vacation.Contract.Vacation.ValueObject;
 using System;
-using System.Collections.Generic;
+
 namespace Holidaybooking.Vacation.Domain.Vacation
 {
-    enum VacationStatus
+    public enum VacationStatus
     {
       Pending,
       Approved,
@@ -12,10 +14,56 @@ namespace Holidaybooking.Vacation.Domain.Vacation
 
     public class Vacation
     {
-        Guid Id {get;}
-        Guid EmployeeId {get;}
-        VacationPeriod VacationPeriod{get;}
-        VacationStatus Status{get;}
-        Guid ApprovedBy {get;}
+        Guid Id { get; set; }
+        Guid EmployeeId { get; set; }
+        VacationPeriod VacationPeriod { get; set; }
+        VacationStatus Status { get; set; }
+        Guid ApprovedBy { get; set; }
+
+        public Vacation()
+        {
+
+        }
+
+        public Vacation(Guid id, Guid employeeId, VacationPeriod vacationPeriod, VacationStatus status, Guid approvedBy)
+        {
+            Id = id;
+            EmployeeId = employeeId;
+            VacationPeriod = vacationPeriod;
+            Status = status;
+            ApprovedBy = approvedBy;
+
+        }
+
+        public void Update(VacationInfo vacationInfo)
+        {
+            
+            Status = MapStatus(vacationInfo.Status);
+            VacationPeriod = new VacationPeriod(vacationInfo.Start, vacationInfo.End);
+            ApprovedBy = vacationInfo.ApprovedBy;
+        }
+
+        public static VacationStatus MapStatus(HolidayBooking.Vacation.Contract.Vacation.ValueObject.Status status)
+        {
+            VacationStatus returnStatus= VacationStatus.Pending;
+
+            switch (status)
+            {                
+                case HolidayBooking.Vacation.Contract.Vacation.ValueObject.Status.Approved:
+                    returnStatus = VacationStatus.Approved;
+                    break;
+                                   
+                case HolidayBooking.Vacation.Contract.Vacation.ValueObject.Status.AwaitingFurtherDetails:
+                    returnStatus = VacationStatus.AwaitingFurtherDetails;
+                    break;
+                case HolidayBooking.Vacation.Contract.Vacation.ValueObject.Status.Declined:
+                    returnStatus = VacationStatus.Declined;
+                    break;
+                default:
+                    returnStatus = VacationStatus.Pending;
+                    break;
+            }
+            return returnStatus;
+        }
     }
 }

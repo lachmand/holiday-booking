@@ -26,6 +26,9 @@ namespace HolidayBooking.Employee.Views.Employee
             return Employees
                 .Select(employee => new EmployeeListItem
                 {
+                    Id= employee.Id,
+                    ChristianName= employee.Name.ChristianName,
+                    Surname=employee.Name.Surname
                 })
                 .ToListAsync(cancellationToken);
         }
@@ -36,10 +39,11 @@ namespace HolidayBooking.Employee.Views.Employee
                 .Select(employee => new EmployeeItem
                 {
                     Id = employee.Id,
-                Name = new HolidayBooking.Employee.Contract.Employee.ValueObjects.Name(employee.Name.ChristianName,employee.Name.Surname),
+                    Name = new Contract.Employee.ValueObjects.Name(employee.Name.ChristianName, employee.Name.Surname),
                     Email = employee.Email
                 })
                 .SingleOrDefaultAsync(employee => employee.Id == query.Id, cancellationToken);
+
         }
-    }
-}
+    }//class
+}//ns

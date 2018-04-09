@@ -7,8 +7,8 @@ namespace HolidayBooking.Employee.Domain.Employee
 {    
     public class Employee : IAggregate
     {
-         public Guid Id { get; }
-         public Name Name {get;}
-         public String Email {get;}
+        public Guid Id { get; set; }
+        public Name Name { get; set; }
+        public String Email { get; set; }
     }
 }

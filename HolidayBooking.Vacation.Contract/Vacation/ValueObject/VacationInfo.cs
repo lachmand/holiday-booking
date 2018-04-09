@@ -9,8 +9,9 @@ namespace HolidayBooking.Vacation.Contract.Vacation.ValueObject
       Declined,
       AwaitingFurtherDetails      
     }
-    public class VacationDto
+    public class VacationInfo
     {
+        public Guid EmployeeId { get; private set; }
         public DateTime Start { get; private set; }
         public DateTime End { get; private set; }
         public Status Status { get; private set; }

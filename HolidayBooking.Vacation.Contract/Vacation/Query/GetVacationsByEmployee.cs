@@ -4,7 +4,7 @@ using HolidayBooking.Vacation.Contract.Vacation.ValueObject;
 
 namespace HolidayBooking.Vacation.Contract.Vacation.Query
 {
-    public class GetVacationByEmployee : IQuery<EmployeeVacations>
+    public class GetVacationByEmployee : IQuery<VacationItem>
     {
         public Guid EmployeeId { get; private set; }
         public GetVacationByEmployee(Guid employeeId)
