@@ -22,7 +22,7 @@ namespace HolidayBooking.Service.Controllers
             _queryBus = queryBus;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet]
         public Task<EmployeeItem> Get(Guid id)
         {
             return _queryBus.Send<GetEmployee, EmployeeItem>(new GetEmployee(id));
