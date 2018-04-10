@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Hosting;
+using HolidayBooking.VacationService.Model;
 
 namespace HolidayBooking.VacationService
 {
@@ -24,6 +26,16 @@ namespace HolidayBooking.VacationService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSingleton<IHostedService, VacationHandlerService>();
+
+            services.Configure<Settings>(options =>
+            {
+                options.ConnectionString
+                    = Configuration.GetSection("MongoConnection:ConnectionString").Value;
+                options.Database
+                    = Configuration.GetSection("MongoConnection:Database").Value;
+            });
+            services.AddTransient<IVacationRepository, VacationRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

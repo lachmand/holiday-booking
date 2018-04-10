@@ -42,5 +42,7 @@ namespace Holidaybooking.Vacation.Domain.Vacation.Handlers
 
             await eventBus.Publish(new VacationCreated(id, command.Data));
         }
+
+
     }//class
 }//ns

@@ -14,3 +14,4 @@
 /Users/ldhall/Development/holiday-booking/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
 /Users/ldhall/Development/holiday-booking/Domain/obj/Debug/netcoreapp2.0/Domain.dll
 /Users/ldhall/Development/holiday-booking/Domain/obj/Debug/netcoreapp2.0/Domain.pdb
+/Users/ldhall/Development/holiday-booking/Domain/obj/Debug/netcoreapp2.0/Domain.csprojResolveAssemblyReference.cache

@@ -27,6 +27,12 @@ namespace HolidayBooking.Service.Controllers
         {
             await _commandBus.Send(command);
         }
+
+        [HttpPut]
+        public async Task UpdateVacation([FromBody] UpdateVacation command)
+        {
+            await _commandBus.Send(command);
+        }
     }//class
 }//ns
 
