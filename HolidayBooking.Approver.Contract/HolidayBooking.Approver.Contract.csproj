@@ -10,7 +10,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
-    <ProjectReference Include="..\Holidaybooking.Vacation.Contract\Holidaybooking.Vacation.Contract.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Approver\Commands\" />

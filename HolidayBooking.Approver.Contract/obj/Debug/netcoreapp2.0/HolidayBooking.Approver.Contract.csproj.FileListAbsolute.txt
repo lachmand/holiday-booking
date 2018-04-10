@@ -1,4 +1,11 @@
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Approver.Contract/bin/Debug/netcoreapp2.0/HolidayBooking.Approver.Contract.deps.json
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Approver.Contract/bin/Debug/netcoreapp2.0/HolidayBooking.Approver.Contract.dll
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Approver.Contract/bin/Debug/netcoreapp2.0/HolidayBooking.Approver.Contract.pdb
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Approver.Contract/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Approver.Contract/bin/Debug/netcoreapp2.0/Domain.pdb
 /Users/ldhall/Development/holiday-booking/HolidayBooking.Approver.Contract/obj/Debug/netcoreapp2.0/HolidayBooking.Approver.Contract.csprojResolveAssemblyReference.cache
 /Users/ldhall/Development/holiday-booking/HolidayBooking.Approver.Contract/obj/Debug/netcoreapp2.0/HolidayBooking.Approver.Contract.csproj.CoreCompileInputs.cache
 /Users/ldhall/Development/holiday-booking/HolidayBooking.Approver.Contract/obj/Debug/netcoreapp2.0/HolidayBooking.Approver.Contract.AssemblyInfoInputs.cache
 /Users/ldhall/Development/holiday-booking/HolidayBooking.Approver.Contract/obj/Debug/netcoreapp2.0/HolidayBooking.Approver.Contract.AssemblyInfo.cs
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Approver.Contract/obj/Debug/netcoreapp2.0/HolidayBooking.Approver.Contract.dll
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Approver.Contract/obj/Debug/netcoreapp2.0/HolidayBooking.Approver.Contract.pdb

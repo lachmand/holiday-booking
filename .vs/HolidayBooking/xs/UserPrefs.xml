@@ -1,5 +1,6 @@
-﻿<Properties StartupConfiguration="{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HolidayBooking.VacationService/Controllers/VacationController.cs">
+﻿<Properties StartupConfiguration="{335F1E52-221E-4C41-B0AC-06B2BDE1686C}|Default">
+  <MonoDevelop.Ide.ItemProperties.HolidayBooking.Service PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HolidayBooking.Vacation.Contract/Vacation/Command/CreateVacation.cs">
     <Files>
       <File FileName="HolidayBooking.Approver.Contract/Approver/Commands/ApproverApprove.cs" Line="1" Column="1" />
       <File FileName="HolidayBooking.Employee/Views/Employee/EmployeeQueryHandler.cs" Line="36" Column="47" />
@@ -16,10 +17,9 @@
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/ValueObject/ApproverEmployeeVacations.cs" Line="10" Column="2" />
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/ValueObject/EmployeeVacations.cs" Line="10" Column="2" />
       <File FileName="Holidaybooking.Vacation/Storage/VacationDbContextFactory.cs" Line="4" Column="1" />
-      <File FileName="HolidayBooking.Service/Controllers/VacationController.cs" Line="26" Column="59" />
+      <File FileName="HolidayBooking.Service/Controllers/VacationController.cs" Line="26" Column="57" />
       <File FileName="HolidayBooking.Service/Controllers/EmployeeController.cs" Line="28" Column="46" />
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/Event/VacationCreated.cs" Line="18" Column="2" />
-      <File FileName="HolidayBooking.Vacation.Contract/Vacation/ValueObject/VacationInfo.cs" Line="17" Column="26" />
       <File FileName="HolidayBooking.Service/Startup.cs" Line="87" Column="74" />
       <File FileName="HolidayBooking.Employee.Contract/Employee/Queries/GetEmployee.cs" Line="14" Column="5" />
       <File FileName="HolidayBooking.Service/Model/VacationPeriod.cs" Line="17" Column="2" />
@@ -37,25 +37,37 @@
       <File FileName="Domain/Events/EventSource.cs" Line="1" Column="1" />
       <File FileName="Domain/Events/IEvent.cs" Line="1" Column="1" />
       <File FileName="Domain/Events/IEventBus.cs" Line="1" Column="1" />
-      <File FileName="Holidaybooking.Vacation/Domain/Vacation/Vacation.cs" Line="19" Column="19" />
-      <File FileName="HolidayBooking.Vacation.Contract/Vacation/Command/CreateVacation.cs" Line="11" Column="48" />
+      <File FileName="HolidayBooking.Vacation.Contract/Vacation/Command/CreateVacation.cs" Line="1" Column="1" />
       <File FileName="Domain/Events/IEventHandler.cs" Line="6" Column="33" />
-      <File FileName="HolidayBooking.Service/Infrastructure/Dockerfile" Line="1" Column="1" />
+      <File FileName="HolidayBooking.Service/Infrastructure/Kafka/Dockerfile" Line="1" Column="1" />
       <File FileName="HolidayBooking.Service/Dockerfile" Line="8" Column="77" />
       <File FileName="HolidayBooking.VacationService/appsettings.json" Line="1" Column="1" />
       <File FileName="HolidayBooking.VacationService/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="HolidayBooking.VacationService/Controllers/VacationController.cs" Line="49" Column="22" />
-      <File FileName="HolidayBooking.VacationService/MongoDb/VacationRepository.cs" Line="46" Column="34" />
+      <File FileName="HolidayBooking.VacationService/Controllers/VacationController.cs" Line="54" Column="47" />
+      <File FileName="HolidayBooking.VacationService/MongoDb/VacationContext.cs" Line="1" Column="1" />
+      <File FileName="HolidayBooking.VacationService/MongoDb/VacationRepository.cs" Line="46" Column="40" />
+      <File FileName="HolidayBooking.Vacation.Contract/Vacation/Command/UpdateVacation.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HolidayBooking" expanded="True">
-            <Node name="docker-compose" expanded="True" />
-            <Node name="HolidayBooking.VacationService" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="VacationController.cs" selected="True" />
+            <Node name="HolidayBooking.Approver.Contract" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="ProjectDependencies" expanded="True" />
               </Node>
+            </Node>
+            <Node name="HolidayBooking.Vacation.Contract" expanded="True">
+              <Node name="Vacation" expanded="True">
+                <Node name="Command" expanded="True">
+                  <Node name="CreateVacation.cs" selected="True" />
+                </Node>
+                <Node name="ValueObject" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="HolidayBooking.VacationService" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Infrastructure" expanded="True" />
               <Node name="Model" expanded="True" />
               <Node name="MongoDb" expanded="True" />
             </Node>

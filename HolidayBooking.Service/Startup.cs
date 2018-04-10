@@ -21,7 +21,6 @@ using HolidayBooking.Vacation.Contract.Vacation.Event;
 using Holidaybooking.Vacation.Domain.Vacation.Handlers;
 
 
-
 namespace holiday_booking_service
 {
     public class Startup
@@ -86,7 +85,7 @@ namespace holiday_booking_service
 
             services.AddScoped<IRequestHandler<CreateVacation>, VacationCommandHandler>();
 
-            services.AddScoped<INotificationHandler<VacationCreated>, VacationEventHandler>();
+            services.AddScoped<INotificationHandler<VacationCreated>, Holidaybooking.Vacation.Domain.Vacation.Handlers. VacationEventHandler>();
  
          }
     }//class

@@ -44,12 +44,18 @@ namespace HolidayBooking.VacationService.Controllers
         [HttpPut("{id}")]
         public void Put(string id, [FromBody]Vacation.Contract.Vacation.ValueObject.VacationInfo value)
         {
-            Model.Vacation vacation= new Vacation()
+            Model.Vacation vacation = new Model.Vacation()
             {
-                   Id
-            }
 
-            _vacationRepository.UpdateVacation(id, value);
+                Id = id,
+                EmployeeId = value.EmployeeId,
+                VacationPeriod = new Model.VacationPeriod() { StartDate = value.Start, EndDate = value.End },
+                Status = Model.Vacation.MapStatus(value.Status),
+                ApprovedBy = value.ApprovedBy,
+                ChangedOn = DateTime.UtcNow
+            };
+
+            _vacationRepository.UpdateVacation(id, vacation);
         }
 
         [HttpDelete("{id}")]

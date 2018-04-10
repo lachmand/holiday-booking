@@ -1,6 +1,7 @@
 ﻿using System;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
+using HolidayBooking.Vacation;
 
 namespace HolidayBooking.VacationService.Model
 {
@@ -29,6 +30,29 @@ namespace HolidayBooking.VacationService.Model
         public VacationStatus Status { get; set; }
         public Guid ApprovedBy { get; set; }
         public DateTime ChangedOn { get; set; }
+
+        public static Model.Vacation.VacationStatus MapStatus(HolidayBooking.Vacation.Contract.Vacation.ValueObject.Status status)
+        {
+            Model.Vacation.VacationStatus returnStatus = Model.Vacation.VacationStatus.Pending;
+
+            switch (status)
+            {
+                case HolidayBooking.Vacation.Contract.Vacation.ValueObject.Status.Approved:
+                    returnStatus = Model.Vacation.VacationStatus.Approved;
+                    break;
+
+                case HolidayBooking.Vacation.Contract.Vacation.ValueObject.Status.AwaitingFurtherDetails:
+                    returnStatus = Model.Vacation.VacationStatus.AwaitingFurtherDetails;
+                    break;
+                case HolidayBooking.Vacation.Contract.Vacation.ValueObject.Status.Declined:
+                    returnStatus = Model.Vacation.VacationStatus.Declined;
+                    break;
+                default:
+                    returnStatus = Model.Vacation.VacationStatus.Pending;
+                    break;
+            }
+            return returnStatus;
+        }
 
     }//class
 }//ns

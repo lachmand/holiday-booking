@@ -9,13 +9,13 @@ using Confluent.Kafka.Serialization;
 using Newtonsoft.Json;
 using System.IO;
 
-namespace EventSourcing.Sample.Transactions.Domain.Clients.Handlers
+namespace Holidaybooking.Vacation.Domain.Vacation.Handlers
 {
-    public class ClientsEventHandler :
+    public class VacationEventHandler :
         IEventHandler<VacationCreated>
     {
 
-        public ClientsEventHandler()
+        public VacationEventHandler()
         {
         }
 

@@ -24,7 +24,7 @@ namespace HolidayBooking.VacationService
             try
             {
                 return await _context.Vacation
-                        .FindAsync(_ => true);
+                                     .Find(_ => true).ToListAsync();
             }
             catch (Exception ex)
             {
@@ -41,7 +41,7 @@ namespace HolidayBooking.VacationService
             {
                 ObjectId internalId = GetInternalId(id);
                 return await _context.Vacation
-                                     .FindAsync(vacation => vacation.Id == id
+                                     .Find(vacation => vacation.Id == id
                                                 || vacation.InternalId == internalId)
                                 .FirstOrDefaultAsync();
             }
