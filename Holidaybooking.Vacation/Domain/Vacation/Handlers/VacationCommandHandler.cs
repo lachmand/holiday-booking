@@ -28,19 +28,19 @@ namespace Holidaybooking.Vacation.Domain.Vacation.Handlers
 
         public async Task Handle(CreateVacation command, CancellationToken cancellationToken = default(CancellationToken))
         {
-            var id = command.Id ?? Guid.NewGuid();
+            //var id = command.Id ?? Guid.NewGuid();
 
-            await Vacations.AddAsync(new Vacation(
-                id,
-                command.Data.EmployeeId,
-                new VacationPeriod(command.Data.Start, command.Data.End),
-                Vacation.MapStatus (command.Data.Status),
-                command.Data.ApprovedBy
-            ));
+            //await Vacations.AddAsync(new Vacation(
+            //    id,
+            //    command.Data.EmployeeId,
+            //    new VacationPeriod(command.Data.Start, command.Data.End),
+            //    Vacation.MapStatus (command.Data.Status),
+            //    command.Data.ApprovedBy
+            //));
 
-            await dbContext.SaveChangesAsync(cancellationToken);
+            //await dbContext.SaveChangesAsync(cancellationToken);
 
-            await eventBus.Publish(new VacationCreated(id, command.Data));
+            await eventBus.Publish(new VacationCreated(command.Id.Value, command.Data));
         }
 
 

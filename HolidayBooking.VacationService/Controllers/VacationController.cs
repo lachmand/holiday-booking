@@ -10,7 +10,7 @@ using HolidayBooking.Vacation.Contract.Vacation.Query;
 
 namespace HolidayBooking.VacationService.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("v1/api/vacationHandler/[controller]")]
     public class VacationController : Controller
     {
         private readonly IVacationRepository _vacationRepository;

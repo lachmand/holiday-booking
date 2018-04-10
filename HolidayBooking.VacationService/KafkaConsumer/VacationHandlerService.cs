@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 using System.Threading;
 using Microsoft.Extensions.Hosting;
+using HolidayBooking.VacationService.KafkaConsumer;
 
 namespace HolidayBooking.VacationService
 {
@@ -28,6 +29,8 @@ namespace HolidayBooking.VacationService
             {
                 _logger.LogDebug($"VacationHandlerService task doing background work.");
 
+                VacationKafkaConsumer consumer = new VacationKafkaConsumer();
+                consumer.VacationEventHandler();
 
                 await Task.Delay(50, stoppingToken);
             }

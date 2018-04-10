@@ -18,6 +18,7 @@
 /Users/ldhall/Development/holiday-booking/HolidayBooking.Service/bin/Debug/netcoreapp2.0/HolidayBooking.Employee.Contract.pdb
 /Users/ldhall/Development/holiday-booking/HolidayBooking.Service/bin/Debug/netcoreapp2.0/HolidayBooking.Vacation.Contract.pdb
 /Users/ldhall/Development/holiday-booking/HolidayBooking.Service/bin/Debug/netcoreapp2.0/HolidayBooking.Approver.Contract.pdb
+/Users/ldhall/Development/holiday-booking/HolidayBooking.Service/obj/Debug/netcoreapp2.0/HolidayBooking.Service.csprojResolveAssemblyReference.cache
 /Users/ldhall/Development/holiday-booking/HolidayBooking.Service/obj/Debug/netcoreapp2.0/HolidayBooking.Service.csproj.CoreCompileInputs.cache
 /Users/ldhall/Development/holiday-booking/HolidayBooking.Service/obj/Debug/netcoreapp2.0/HolidayBooking.Service.AssemblyInfoInputs.cache
 /Users/ldhall/Development/holiday-booking/HolidayBooking.Service/obj/Debug/netcoreapp2.0/HolidayBooking.Service.AssemblyInfo.cs

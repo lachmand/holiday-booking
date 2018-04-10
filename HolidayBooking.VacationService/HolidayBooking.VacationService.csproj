@@ -19,6 +19,7 @@
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="2.0.2" />
     <PackageReference Include="Confluent.Kafka" Version="0.11.4" />
     <PackageReference Include="MongoDB.Driver" Version="2.4.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,5 +28,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HolidayBooking.Vacation.Contract\HolidayBooking.Vacation.Contract.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="KafkaConsumer\JsonContent.config" />
   </ItemGroup>
 </Project>
