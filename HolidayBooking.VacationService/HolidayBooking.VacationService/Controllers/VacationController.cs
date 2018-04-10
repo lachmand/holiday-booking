@@ -20,9 +20,8 @@ namespace HolidayBooking.VacationService.Controllers
             _vacationRepository = vacationRepository;
         }
 
-        [NoCache]
         [HttpGet]
-        public async Task<IEnumerable<Note>> Get()
+        public async Task<IEnumerable<Model.Vacation>> Get()
         {
             return await _vacationRepository.GetAllVacations();
         }
