@@ -2,3 +2,7 @@
 /Users/ldhall/Development/holiday-booking/HolidayBooking.VacationService/HolidayBooking.VacationService/obj/Debug/netcoreapp2.0/HolidayBooking.VacationService.csproj.CoreCompileInputs.cache
 /Users/ldhall/Development/holiday-booking/HolidayBooking.VacationService/HolidayBooking.VacationService/obj/Debug/netcoreapp2.0/HolidayBooking.VacationService.AssemblyInfoInputs.cache
 /Users/ldhall/Development/holiday-booking/HolidayBooking.VacationService/HolidayBooking.VacationService/obj/Debug/netcoreapp2.0/HolidayBooking.VacationService.AssemblyInfo.cs
+/Users/ldhall/Development/holiday-booking/HolidayBooking.VacationService/obj/Debug/netcoreapp2.0/HolidayBooking.VacationService.csprojResolveAssemblyReference.cache
+/Users/ldhall/Development/holiday-booking/HolidayBooking.VacationService/obj/Debug/netcoreapp2.0/HolidayBooking.VacationService.csproj.CoreCompileInputs.cache
+/Users/ldhall/Development/holiday-booking/HolidayBooking.VacationService/obj/Debug/netcoreapp2.0/HolidayBooking.VacationService.AssemblyInfoInputs.cache
+/Users/ldhall/Development/holiday-booking/HolidayBooking.VacationService/obj/Debug/netcoreapp2.0/HolidayBooking.VacationService.AssemblyInfo.cs

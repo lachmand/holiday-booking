@@ -19,7 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidayBooking.Employee.Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidayBooking.Vacation.Contract", "HolidayBooking.Vacation.Contract\HolidayBooking.Vacation.Contract.csproj", "{426E245E-94FF-43FB-81BB-A78A7AB19C53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidayBooking.VacationService", "HolidayBooking.VacationService\HolidayBooking.VacationService\HolidayBooking.VacationService.csproj", "{5A10FBDB-1856-4DA2-A7DE-05C37C38E473}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidayBooking.VacationService", "HolidayBooking.VacationService\HolidayBooking.VacationService.csproj", "{5A10FBDB-1856-4DA2-A7DE-05C37C38E473}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -142,5 +144,17 @@ Global
 		{5A10FBDB-1856-4DA2-A7DE-05C37C38E473}.Release|x64.Build.0 = Release|Any CPU
 		{5A10FBDB-1856-4DA2-A7DE-05C37C38E473}.Release|x86.ActiveCfg = Release|Any CPU
 		{5A10FBDB-1856-4DA2-A7DE-05C37C38E473}.Release|x86.Build.0 = Release|Any CPU
+		{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}.Debug|x64.Build.0 = Debug|Any CPU
+		{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}.Debug|x86.Build.0 = Debug|Any CPU
+		{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}.Release|x64.ActiveCfg = Release|Any CPU
+		{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}.Release|x64.Build.0 = Release|Any CPU
+		{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}.Release|x86.ActiveCfg = Release|Any CPU
+		{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

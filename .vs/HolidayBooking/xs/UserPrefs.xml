@@ -1,6 +1,5 @@
-﻿<Properties StartupConfiguration="{335F1E52-221E-4C41-B0AC-06B2BDE1686C}|Default">
-  <MonoDevelop.Ide.ItemProperties.HolidayBooking.Service PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Holidaybooking.Vacation/Domain/Vacation/Vacation.cs">
+﻿<Properties StartupConfiguration="{AEA352AE-0A1F-4113-A9AB-C9FBC38937DD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HolidayBooking.VacationService/Controllers/VacationController.cs">
     <Files>
       <File FileName="HolidayBooking.Approver.Contract/Approver/Commands/ApproverApprove.cs" Line="1" Column="1" />
       <File FileName="HolidayBooking.Employee/Views/Employee/EmployeeQueryHandler.cs" Line="36" Column="47" />
@@ -35,27 +34,41 @@
       <File FileName="Domain/Commands/ICommandHandler.cs" Line="1" Column="1" />
       <File FileName="Domain/Events/EventBus.cs" Line="1" Column="1" />
       <File FileName="Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationCommandHandler.cs" Line="13" Column="18" />
-      <File FileName="HolidayBooking.VacationService/HolidayBooking.VacationService/Startup.cs" Line="38" Column="61" />
-      <File FileName="HolidayBooking.VacationService/HolidayBooking.VacationService/VacationHandlerService.cs" Line="19" Column="9" />
-      <File FileName="HolidayBooking.VacationService/HolidayBooking.VacationService/BackgroundService.cs" Line="8" Column="1" />
       <File FileName="Domain/Events/EventSource.cs" Line="1" Column="1" />
       <File FileName="Domain/Events/IEvent.cs" Line="1" Column="1" />
       <File FileName="Domain/Events/IEventBus.cs" Line="1" Column="1" />
-      <File FileName="HolidayBooking.VacationService/HolidayBooking.VacationService/Controllers/VacationController.cs" Line="58" Column="1" />
-      <File FileName="HolidayBooking.VacationService/HolidayBooking.VacationService/appsettings.json" Line="14" Column="20" />
-      <File FileName="HolidayBooking.VacationService/HolidayBooking.VacationService/Model/Settings.cs" Line="10" Column="6" />
       <File FileName="Holidaybooking.Vacation/Domain/Vacation/Vacation.cs" Line="19" Column="19" />
-      <File FileName="HolidayBooking.VacationService/HolidayBooking.VacationService/VacationRepository.cs" Line="27" Column="58" />
-      <File FileName="HolidayBooking.VacationService/HolidayBooking.VacationService/VacationContext.cs" Line="20" Column="65" />
-      <File FileName="HolidayBooking.VacationService/HolidayBooking.VacationService/Model/Vacation.cs" Line="28" Column="27" />
-      <File FileName="HolidayBooking.VacationService/HolidayBooking.VacationService/Model/VacationPeriod.cs" Line="18" Column="13" />
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/Command/CreateVacation.cs" Line="11" Column="48" />
+      <File FileName="Domain/Events/IEventHandler.cs" Line="6" Column="33" />
+      <File FileName="HolidayBooking.Service/Infrastructure/Dockerfile" Line="1" Column="1" />
+      <File FileName="HolidayBooking.Service/Dockerfile" Line="8" Column="77" />
+      <File FileName="HolidayBooking.VacationService/appsettings.json" Line="1" Column="1" />
+      <File FileName="HolidayBooking.VacationService/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="HolidayBooking.VacationService/Controllers/VacationController.cs" Line="49" Column="22" />
+      <File FileName="HolidayBooking.VacationService/MongoDb/VacationRepository.cs" Line="46" Column="34" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HolidayBooking" expanded="True">
+            <Node name="docker-compose" expanded="True" />
+            <Node name="HolidayBooking.VacationService" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="VacationController.cs" selected="True" />
+              </Node>
+              <Node name="Model" expanded="True" />
+              <Node name="MongoDb" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>

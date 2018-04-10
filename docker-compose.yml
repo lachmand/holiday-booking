@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  holidaybooking.vacationservice:
+    image: holidaybooking
+    build:
+      context: .
+      dockerfile: HolidayBooking.VacationService/HolidayBooking.VacationService/Dockerfile
+  holidaybooking.service:
+    image: holidaybooking
+    build:
+      context: .
+      dockerfile: HolidayBooking.Service/HolidayBooking.Service/Dockerfile

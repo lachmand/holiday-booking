@@ -24,7 +24,7 @@ namespace HolidayBooking.VacationService
             try
             {
                 return await _context.Vacation
-                        .FindAsync(_ => true).ToListAsync();
+                        .FindAsync(_ => true);
             }
             catch (Exception ex)
             {
@@ -134,5 +134,9 @@ namespace HolidayBooking.VacationService
             }
         }
 
+        public Task<bool> RemoveAllVacation()
+        {
+            throw new NotImplementedException();
+        }
     }//class
 }//ns

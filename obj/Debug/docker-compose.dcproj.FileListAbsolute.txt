@@ -1,0 +1,1 @@
+/Users/ldhall/Development/holiday-booking/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache

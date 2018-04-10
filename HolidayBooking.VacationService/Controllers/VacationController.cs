@@ -44,6 +44,11 @@ namespace HolidayBooking.VacationService.Controllers
         [HttpPut("{id}")]
         public void Put(string id, [FromBody]Vacation.Contract.Vacation.ValueObject.VacationInfo value)
         {
+            Model.Vacation vacation= new Vacation()
+            {
+                   Id
+            }
+
             _vacationRepository.UpdateVacation(id, value);
         }
 
