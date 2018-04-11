@@ -17,10 +17,10 @@
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/ValueObject/ApproverEmployeeVacations.cs" Line="10" Column="2" />
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/ValueObject/EmployeeVacations.cs" Line="10" Column="2" />
       <File FileName="Holidaybooking.Vacation/Storage/VacationDbContextFactory.cs" Line="4" Column="1" />
-      <File FileName="HolidayBooking.Service/Controllers/VacationController.cs" Line="29" Column="47" />
+      <File FileName="HolidayBooking.Service/Controllers/VacationController.cs" Line="38" Column="1" />
       <File FileName="HolidayBooking.Service/Controllers/EmployeeController.cs" Line="25" Column="17" />
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/Event/VacationCreated.cs" Line="12" Column="41" />
-      <File FileName="HolidayBooking.Service/Startup.cs" Line="88" Column="120" />
+      <File FileName="HolidayBooking.Service/Startup.cs" Line="76" Column="1" />
       <File FileName="HolidayBooking.Employee.Contract/Employee/Queries/GetEmployee.cs" Line="14" Column="5" />
       <File FileName="HolidayBooking.Service/Model/VacationPeriod.cs" Line="17" Column="2" />
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/Query/GetVacationsByApprover.cs" Line="8" Column="59" />
@@ -28,11 +28,11 @@
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/Query/VacationItem.cs" Line="14" Column="6" />
       <File FileName="Holidaybooking.Vacation/Storage/:Users:ldhall:Development:holiday-booking:HolidayBooking.Vacation.Contract:Vacation:Query:VacationListItem.cs" Line="10" Column="9" />
       <File FileName="HolidayBooking.Service/Controllers/ApproverController.cs" Line="7" Column="22" />
-      <File FileName="Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationEventHandler.cs" Line="33" Column="64" />
-      <File FileName="Domain/Commands/CommandBus.cs" Line="15" Column="46" />
+      <File FileName="Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationEventHandler.cs" Line="34" Column="1" />
+      <File FileName="Domain/Commands/CommandBus.cs" Line="17" Column="1" />
       <File FileName="Domain/Commands/ICommandHandler.cs" Line="1" Column="1" />
-      <File FileName="Domain/Events/EventBus.cs" Line="1" Column="1" />
-      <File FileName="Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationCommandHandler.cs" Line="43" Column="56" />
+      <File FileName="Domain/Events/EventBus.cs" Line="11" Column="1" />
+      <File FileName="Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationCommandHandler.cs" Line="39" Column="1" />
       <File FileName="Domain/Events/EventSource.cs" Line="1" Column="1" />
       <File FileName="Domain/Events/IEvent.cs" Line="1" Column="1" />
       <File FileName="Domain/Events/IEventHandler.cs" Line="6" Column="33" />
@@ -45,7 +45,7 @@
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/Command/UpdateVacation.cs" Line="15" Column="10" />
       <File FileName="HolidayBooking.VacationService/Program.cs" Line="1" Column="1" />
       <File FileName="HolidayBooking.VacationService/KafkaConsumer/VacationHandlerService.cs" Line="21" Column="51" />
-      <File FileName="HolidayBooking.VacationService/KafkaConsumer/VacationKafkaConsumer.cs" Line="62" Column="56" />
+      <File FileName="HolidayBooking.VacationService/KafkaConsumer/VacationKafkaConsumer.cs" Line="53" Column="55" />
       <File FileName="HolidayBooking.VacationService/KafkaConsumer/JsonContent.config" Line="1" Column="1" />
       <File FileName="HolidayBooking.VacationService/KafkaConsumer/JsonContent.cs" Line="15" Column="1" />
       <File FileName="HolidayBooking.Service/Program.cs" Line="17" Column="1" />
@@ -53,7 +53,7 @@
       <File FileName="HolidayBooking.VacationService/Model/Vacation.cs" Line="15" Column="35" />
       <File FileName="HolidayBooking.Service/Model/VacationRequestDto.cs" Line="6" Column="6" />
       <File FileName="Holidaybooking.Vacation/Domain/Vacation/Vacation.cs" Line="20" Column="44" />
-      <File FileName="HolidayBooking.Vacation.Contract/Vacation/Command/CreateVacation.cs" Line="11" Column="50" />
+      <File FileName="HolidayBooking.Vacation.Contract/Vacation/Command/CreateVacation.cs" Line="15" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -62,31 +62,7 @@
             <Node name="Domain" expanded="True">
               <Node name="Commands" expanded="True" />
             </Node>
-            <Node name="HolidayBooking.Service" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Model" expanded="True" />
-            </Node>
-            <Node name="HolidayBooking.Vacation" expanded="True">
-              <Node name="Domain" expanded="True">
-                <Node name="Vacation" expanded="True">
-                  <Node name="Handlers" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
-            <Node name="HolidayBooking.Vacation.Contract" expanded="True">
-              <Node name="Vacation" expanded="True">
-                <Node name="Command" expanded="True">
-                  <Node name="CreateVacation.cs" selected="True" />
-                </Node>
-                <Node name="Event" expanded="True" />
-                <Node name="ValueObject" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="HolidayBooking.VacationService" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="KafkaConsumer" expanded="True" />
-              <Node name="Model" expanded="True" />
-            </Node>
+            <Node name="HolidayBooking.VacationService" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -95,10 +71,20 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/ldhall/Development/holiday-booking/HolidayBooking.Service/Controllers/VacationController.cs" relfile="HolidayBooking.Service/Controllers/VacationController.cs" line="38" column="1" />
+      <Breakpoint file="/Users/ldhall/Development/holiday-booking/Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationEventHandler.cs" relfile="Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationEventHandler.cs" line="24" column="23" />
+      <Breakpoint file="/Users/ldhall/Development/holiday-booking/Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationEventHandler.cs" relfile="Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationEventHandler.cs" line="34" column="1" />
+      <Breakpoint file="/Users/ldhall/Development/holiday-booking/Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationEventHandler.cs" relfile="Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationEventHandler.cs" line="31" column="1" />
+      <Breakpoint file="/Users/ldhall/Development/holiday-booking/Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationEventHandler.cs" relfile="Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationEventHandler.cs" line="32" column="13" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="ServiceAndConsumer" Name="ServiceAndConsumer">
+      <Items>
+        <StartupItem ItemId="{335F1E52-221E-4C41-B0AC-06B2BDE1686C}" ItemName="HolidayBooking.Service" ConfigurationId="Default" />
+        <StartupItem ItemId="{5A10FBDB-1856-4DA2-A7DE-05C37C38E473}" ItemName="HolidayBooking.VacationService" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
 </Properties>
