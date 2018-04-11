@@ -11,10 +11,10 @@ namespace HolidayBooking.Vacation.Contract.Vacation.ValueObject
     }
     public class VacationInfo
     {
-        public Guid EmployeeId { get; private set; }
-        public DateTime Start { get; private set; }
-        public DateTime End { get; private set; }
-        public Status Status { get; private set; }
-        public Guid ApprovedBy { get; private set; }
+        public int EmployeeId { get;  set; }
+        public DateTime Start { get;  set; }
+        public DateTime End { get;  set; }
+        public Status Status { get;  set; }
+        public int ApprovedBy { get;  set; }
     }
 }

@@ -26,19 +26,10 @@ namespace Holidaybooking.Vacation.Domain.Vacation.Handlers
                 { "bootstrap.servers", "localhost:9092" }
             };
 
-            Producer<string, string> producer = null;
-            try
+            string vacationRequestNotification = JsonConvert.SerializeObject(notification);
+            using (var producer = new Producer<Null, string>(config, null, new StringSerializer(Encoding.UTF8)))
             {
-                producer = new Producer<string, string>(config, new StringSerializer(Encoding.UTF8), new StringSerializer(Encoding.UTF8));
-                await producer.ProduceAsync("vacation.requested", notification.Id.ToString(), JsonConvert.SerializeObject(notification));
-
-            }
-            finally
-            {
-                if (producer != null)
-                {
-                    producer.Dispose();
-                }
+                var dr=producer.ProduceAsync("vacation.requested", null, vacationRequestNotification).Result;
             }
         }
     }//class

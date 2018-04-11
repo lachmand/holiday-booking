@@ -15,17 +15,17 @@ namespace Holidaybooking.Vacation.Domain.Vacation
     public class Vacation
     {
         Guid Id { get; set; }
-        Guid EmployeeId { get; set; }
+        int EmployeeId { get; set; }
         VacationPeriod VacationPeriod { get; set; }
         VacationStatus Status { get; set; }
-        Guid ApprovedBy { get; set; }
+        int ApprovedBy { get; set; }
 
         public Vacation()
         {
 
         }
 
-        public Vacation(Guid id, Guid employeeId, VacationPeriod vacationPeriod, VacationStatus status, Guid approvedBy)
+        public Vacation(Guid id, int employeeId, VacationPeriod vacationPeriod, VacationStatus status, int approvedBy)
         {
             Id = id;
             EmployeeId = employeeId;

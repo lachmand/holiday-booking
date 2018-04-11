@@ -9,9 +9,9 @@ namespace HolidayBooking.Vacation.Contract.Vacation.Event
         public Guid Id { get; }
         public VacationInfo Data { get; }
 
-        public VacationCreated(Guid id, VacationInfo data)
+        public VacationCreated( VacationInfo data)
         {
-            Id = id;
+            Id = Guid.NewGuid();
             Data = data;
         }
     }

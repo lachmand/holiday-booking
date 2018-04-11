@@ -7,6 +7,7 @@
     <Folder Include="wwwroot\" />
     <Folder Include="Infrastructure\" />
     <Folder Include="Infrastructure\Kafka\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
@@ -28,7 +29,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Model\VacationPeriod.cs" />
-    <Compile Remove="Model\VacationRequestDto.cs" />
     <Compile Remove="Model\VacationsDto.cs" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

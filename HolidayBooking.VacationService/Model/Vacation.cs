@@ -25,10 +25,10 @@ namespace HolidayBooking.VacationService.Model
         // external ID or key, which may be easier to reference (ex: 1,2,3 etc.)
         public string Id { get; set; }
 
-        public Guid EmployeeId { get; set; }
+        public int EmployeeId { get; set; }
         public VacationPeriod VacationPeriod { get; set; }
         public VacationStatus Status { get; set; }
-        public Guid ApprovedBy { get; set; }
+        public int ApprovedBy { get; set; }
         public DateTime ChangedOn { get; set; }
 
         public static Model.Vacation.VacationStatus MapStatus(HolidayBooking.Vacation.Contract.Vacation.ValueObject.Status status)

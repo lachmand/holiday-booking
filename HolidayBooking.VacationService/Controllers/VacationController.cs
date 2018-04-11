@@ -37,7 +37,7 @@ namespace HolidayBooking.VacationService.Controllers
         {
             _vacationRepository.AddVacation(new Model.Vacation
             {
-                Id = vacation.Id.ToString() //todo
+                Id = vacation.EmployeeId.ToString() //todo
             });
         }
 

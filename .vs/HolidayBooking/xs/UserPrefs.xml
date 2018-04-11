@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{335F1E52-221E-4C41-B0AC-06B2BDE1686C}|Default">
   <MonoDevelop.Ide.ItemProperties.HolidayBooking.Service PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HolidayBooking.VacationService/KafkaConsumer/VacationKafkaConsumer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HolidayBooking.Vacation.Contract/Vacation/Command/CreateVacation.cs">
     <Files>
       <File FileName="HolidayBooking.Approver.Contract/Approver/Commands/ApproverApprove.cs" Line="1" Column="1" />
       <File FileName="HolidayBooking.Employee/Views/Employee/EmployeeQueryHandler.cs" Line="36" Column="47" />
@@ -17,9 +17,9 @@
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/ValueObject/ApproverEmployeeVacations.cs" Line="10" Column="2" />
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/ValueObject/EmployeeVacations.cs" Line="10" Column="2" />
       <File FileName="Holidaybooking.Vacation/Storage/VacationDbContextFactory.cs" Line="4" Column="1" />
-      <File FileName="HolidayBooking.Service/Controllers/VacationController.cs" Line="26" Column="57" />
-      <File FileName="HolidayBooking.Service/Controllers/EmployeeController.cs" Line="28" Column="46" />
-      <File FileName="HolidayBooking.Vacation.Contract/Vacation/Event/VacationCreated.cs" Line="18" Column="2" />
+      <File FileName="HolidayBooking.Service/Controllers/VacationController.cs" Line="29" Column="47" />
+      <File FileName="HolidayBooking.Service/Controllers/EmployeeController.cs" Line="25" Column="17" />
+      <File FileName="HolidayBooking.Vacation.Contract/Vacation/Event/VacationCreated.cs" Line="12" Column="41" />
       <File FileName="HolidayBooking.Service/Startup.cs" Line="88" Column="120" />
       <File FileName="HolidayBooking.Employee.Contract/Employee/Queries/GetEmployee.cs" Line="14" Column="5" />
       <File FileName="HolidayBooking.Service/Model/VacationPeriod.cs" Line="17" Column="2" />
@@ -28,15 +28,13 @@
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/Query/VacationItem.cs" Line="14" Column="6" />
       <File FileName="Holidaybooking.Vacation/Storage/:Users:ldhall:Development:holiday-booking:HolidayBooking.Vacation.Contract:Vacation:Query:VacationListItem.cs" Line="10" Column="9" />
       <File FileName="HolidayBooking.Service/Controllers/ApproverController.cs" Line="7" Column="22" />
-      <File FileName="Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationEventHandler.cs" Line="33" Column="122" />
-      <File FileName="Domain/Commands/CommandBus.cs" Line="1" Column="1" />
-      <File FileName="Domain/Commands/ICommand.cs" Line="1" Column="1" />
+      <File FileName="Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationEventHandler.cs" Line="33" Column="64" />
+      <File FileName="Domain/Commands/CommandBus.cs" Line="15" Column="46" />
       <File FileName="Domain/Commands/ICommandHandler.cs" Line="1" Column="1" />
       <File FileName="Domain/Events/EventBus.cs" Line="1" Column="1" />
-      <File FileName="Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationCommandHandler.cs" Line="43" Column="31" />
+      <File FileName="Holidaybooking.Vacation/Domain/Vacation/Handlers/VacationCommandHandler.cs" Line="43" Column="56" />
       <File FileName="Domain/Events/EventSource.cs" Line="1" Column="1" />
       <File FileName="Domain/Events/IEvent.cs" Line="1" Column="1" />
-      <File FileName="HolidayBooking.Vacation.Contract/Vacation/Command/CreateVacation.cs" Line="1" Column="1" />
       <File FileName="Domain/Events/IEventHandler.cs" Line="6" Column="33" />
       <File FileName="HolidayBooking.Service/Infrastructure/Kafka/Dockerfile" Line="1" Column="1" />
       <File FileName="HolidayBooking.Service/Dockerfile" Line="8" Column="77" />
@@ -46,39 +44,48 @@
       <File FileName="HolidayBooking.VacationService/MongoDb/VacationRepository.cs" Line="46" Column="56" />
       <File FileName="HolidayBooking.Vacation.Contract/Vacation/Command/UpdateVacation.cs" Line="15" Column="10" />
       <File FileName="HolidayBooking.VacationService/Program.cs" Line="1" Column="1" />
-      <File FileName="HolidayBooking.VacationService/KafkaConsumer/VacationHandlerService.cs" Line="36" Column="14" />
-      <File FileName="HolidayBooking.VacationService/KafkaConsumer/VacationKafkaConsumer.cs" Line="65" Column="77" />
+      <File FileName="HolidayBooking.VacationService/KafkaConsumer/VacationHandlerService.cs" Line="21" Column="51" />
+      <File FileName="HolidayBooking.VacationService/KafkaConsumer/VacationKafkaConsumer.cs" Line="62" Column="56" />
       <File FileName="HolidayBooking.VacationService/KafkaConsumer/JsonContent.config" Line="1" Column="1" />
       <File FileName="HolidayBooking.VacationService/KafkaConsumer/JsonContent.cs" Line="15" Column="1" />
+      <File FileName="HolidayBooking.Service/Program.cs" Line="17" Column="1" />
+      <File FileName="HolidayBooking.VacationService/Controllers/VacationController.cs" Line="47" Column="59" />
+      <File FileName="HolidayBooking.VacationService/Model/Vacation.cs" Line="15" Column="35" />
+      <File FileName="HolidayBooking.Service/Model/VacationRequestDto.cs" Line="6" Column="6" />
+      <File FileName="Holidaybooking.Vacation/Domain/Vacation/Vacation.cs" Line="20" Column="44" />
+      <File FileName="HolidayBooking.Vacation.Contract/Vacation/Command/CreateVacation.cs" Line="11" Column="50" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HolidayBooking" expanded="True">
             <Node name="Domain" expanded="True">
-              <Node name="Events" expanded="True" />
+              <Node name="Commands" expanded="True" />
             </Node>
             <Node name="HolidayBooking.Service" expanded="True">
-              <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
+              <Node name="Model" expanded="True" />
             </Node>
             <Node name="HolidayBooking.Vacation" expanded="True">
-              <Node name="Dependencies" expanded="True" />
               <Node name="Domain" expanded="True">
                 <Node name="Vacation" expanded="True">
                   <Node name="Handlers" expanded="True" />
                 </Node>
               </Node>
             </Node>
+            <Node name="HolidayBooking.Vacation.Contract" expanded="True">
+              <Node name="Vacation" expanded="True">
+                <Node name="Command" expanded="True">
+                  <Node name="CreateVacation.cs" selected="True" />
+                </Node>
+                <Node name="Event" expanded="True" />
+                <Node name="ValueObject" expanded="True" />
+              </Node>
+            </Node>
             <Node name="HolidayBooking.VacationService" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
               <Node name="Controllers" expanded="True" />
-              <Node name="Infrastructure" expanded="True" />
-              <Node name="KafkaConsumer" expanded="True">
-                <Node name="VacationKafkaConsumer.cs" selected="True" />
-              </Node>
+              <Node name="KafkaConsumer" expanded="True" />
+              <Node name="Model" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -87,7 +94,9 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/ldhall/Development/holiday-booking/HolidayBooking.Service/Controllers/VacationController.cs" relfile="HolidayBooking.Service/Controllers/VacationController.cs" line="38" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />

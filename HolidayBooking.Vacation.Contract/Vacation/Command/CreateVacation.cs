@@ -5,12 +5,12 @@ namespace HolidayBooking.Vacation.Contract.Vacation.Command
 {
     public class CreateVacation : ICommand
     {
-        public Guid? Id { get; }
-        public VacationInfo Data { get; }
+        public int EmployeeId { get; set; }
+        public VacationInfo Data { get; set; }
 
-        public CreateVacation(Guid id, VacationInfo data)
+        public CreateVacation(int employeeId, VacationInfo data)
         {
-            Id = id;
+            EmployeeId=employeeId;
             Data = data;
         }
     }//class

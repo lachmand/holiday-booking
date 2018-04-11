@@ -13,15 +13,10 @@ namespace Holidaybooking.Vacation.Domain.Vacation.Handlers
     public class VacationCommandHandler:
     ICommandHandler<CreateVacation>
     {
-        private readonly HolidayBooking.Vacation.Storage.VacationDbContext dbContext;
         private readonly IEventBus eventBus;
 
-        private DbSet<Vacation> Vacations;
-
-        public VacationCommandHandler(VacationDbContext dbContext, IEventBus eventBus)
+        public VacationCommandHandler(IEventBus eventBus)
         {
-            this.dbContext = dbContext;
-            Vacations = dbContext.Vacations;
             this.eventBus = eventBus;
         }
 
@@ -40,7 +35,7 @@ namespace Holidaybooking.Vacation.Domain.Vacation.Handlers
 
             //await dbContext.SaveChangesAsync(cancellationToken);
 
-            await eventBus.Publish(new VacationCreated(command.Id.Value, command.Data));
+            await eventBus.Publish(new VacationCreated(command.Data));
         }
 
 

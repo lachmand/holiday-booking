@@ -51,6 +51,7 @@ namespace HolidayBooking.VacationService.KafkaConsumer
                   => Console.WriteLine($"Consume error ({msg.TopicPartitionOffset}): {msg.Error}");
 
                 consumer.Subscribe("vacation.requested");
+                consumer.Poll(100);
             }
         }
 
@@ -59,7 +60,7 @@ namespace HolidayBooking.VacationService.KafkaConsumer
             // Create a New HttpClient object.
             HttpClient client = new HttpClient();
 
-            CreateVacation createVacation = new CreateVacation(vacationCreated.Id, vacationCreated.Data);
+            CreateVacation createVacation = new CreateVacation(vacationCreated.Data.EmployeeId, vacationCreated.Data);
 
             // Call asynchronous network methods in a try/catch block to handle exceptions
             try
